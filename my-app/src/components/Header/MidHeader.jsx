@@ -1,28 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import TopMenu from "../basic/TopMenu";
 
 export default function MidHeader({ handler }) {
-  const [isScroll, setIsScroll] = useState(false);
-  const [icons, setIcons] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.innerWidth > 768) {
-        console.log(window.innerWidth);
-        if (window.scrollY > 100) {
-          setIsScroll(true);
-        } else if (window.scrollY < 100) {
-          setIsScroll(false);
-        }
-      }
-    });
+  const [isScroll] = useState(false);
+  const [icons] = useState(true);
 
-    // responsive
-    if (window.innerWidth <= 768) {
-      setIsScroll(true);
-      setIcons(false);
-    }
-  }, []);
   return (
     <div className={`header-mid ${!isScroll && "toggle"}`}>
       {isScroll && (

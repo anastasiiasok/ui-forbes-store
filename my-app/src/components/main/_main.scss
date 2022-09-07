@@ -6,7 +6,7 @@
     justify-content: space-between;
     margin-top: 50px;
     padding: 15px 0;
-    border-bottom: 1px solid $color-black;
+    border-bottom: 1px solid #333333;
 
     h3 {
       font-size: 22px;
@@ -64,8 +64,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: $color-dark;
-    color: $color-white;
+    background-color: #333333;
+    color: #fff;
     padding: 5px 10px;
   }
 }

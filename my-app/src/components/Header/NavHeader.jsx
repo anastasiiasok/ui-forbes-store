@@ -12,7 +12,7 @@ export default function NavHeader({ isToggle }) {
     },
     {
       link: "/",
-      name: "ForbeseWomen",
+      name: "Forbes Women",
     },
     {
       link: "/",
